@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Spidey Store</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('spiderman-wallpaper.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+       
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            color: red;
+            text-shadow: 3px 3px 10px black;
+            letter-spacing: 5px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: 3px 3px 10px black; }
+            100% { text-shadow: 5px 5px 20px red; }
+        }
+
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            text-shadow: 2px 2px 10px red;
+        }
+
+       
+        .about {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            margin: 50px auto;
+            width: 70%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px red;
+            text-align: left;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            color: red;
+            text-shadow: 2px 2px 10px black;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+            animation: slideIn 1.5s;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-30px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        
+        .about button {
+            background: red;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .about button:hover {
+            background: black;
+            transform: scale(1.1);
+        }
+
+        
+        .spider {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background: url('spider.png') no-repeat center/contain;
+            animation: moveSpider 3s infinite alternate;
+        }
+
+        @keyframes moveSpider {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(50px); }
+        }
+
+        
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Spidey Store</h1>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ccontact.html">Contact</a></li>
+                <li><a href="assecc.html">Accessories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="spider"></div>
+
+    <section class="about">
+        <h2>Who We Are</h2>
+        <p>Welcome to *Spidey Store, the ultimate destination for Spider-Man fans! We provide top-quality merchandise, including **clothing, shoes, toys, and accessories* inspired by your favorite web-slinger.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to bring *authentic and stylish* Spider-Man-themed products to fans worldwide. Whether you're a casual fan or a die-hard collector, we have something for you!</p>
+        
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>🕷 *Exclusive Spider-Man Designs*</li>
+            <li>🕷 *High-Quality Materials*</li>
+            <li>🕷 *Fast & Reliable Shipping*</li>
+            <li>🕷 *100% Customer Satisfaction*</li>
+        </ul>
+        
+        <a href="project.html"><button>Shop Now</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Spidey Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
